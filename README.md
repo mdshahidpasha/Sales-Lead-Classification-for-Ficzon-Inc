@@ -32,10 +32,10 @@ This project showcases a Classification-based machine learning approach to predi
 4. **Model Building**
    - Tested multiple regression models:
      - Logistic Regression
-     - Decision Tree Regressor
-     - Random Forest Regressor
+     - Decision Tree 
+     - Random Forest 
      - KNN
-     - XGBoost Regressor
+     - XGBoost
 
 5. **Model Evaluation**
    - Evaluated models using:
