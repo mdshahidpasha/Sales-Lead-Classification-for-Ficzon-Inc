@@ -1,41 +1,72 @@
 # Sales-Lead-Classification-for-Ficzon-Inc
-# Sales Client Prediction Project
+# Sales-Client-Prediction
+# 📈 Sales Client Prediction using Binary Classification Models
 
-This project involves predicting client sales using various regression algorithms. The goal is to identify the most accurate model for predicting future sales based on historical client data.
+This project showcases a Classification-based machine learning approach to predict client sales using various algorithms. It includes data preprocessing, exploratory analysis, model building, and evaluation to determine the best-performing model for accurate sales forecasting.
 
-## 📁 Project Structure
+---
 
-- `Sales_client_proj.ipynb` — Jupyter Notebook containing data cleaning, EDA, feature selection, model building, evaluation, and conclusions.
+## 📌 Project Overview
 
-## 📊 Key Features
+- **Dataset**: Sales Lead Classification For Ficzon Inc
+- **Task**: Classification — Predicting High Potential(1) or Low Potential(0)
+- **Target Variable**: Target (High potential/Low Potential)
+- **Model Types**: Binary Classification
+---
 
-- Data preprocessing and outlier treatment
-- Exploratory Data Analysis (EDA)
-- Multiple regression model comparisons:
-  - Linear Regression
-  - Decision Tree Regressor
-  - Random Forest Regressor
-  - XGBoost Regressor
-  - Support Vector Regressor (SVR)
-- Model evaluation using R², Adjusted R², RMSE, MAE
-- Model selection based on performance metrics
+## 📊 Workflow Summary
 
-## 📌 Technologies Used
+1. **Data Loading**
+   - Imported dataset using `pandas.read_csv()`
+   - Checked data shape, types, and null values
+
+2. **Exploratory Data Analysis (EDA)**
+   - Visualized distributions and correlations using `seaborn` and `matplotlib`
+   - Identified key features influencing sales
+
+3. **Data Preprocessing**
+   - Handled missing values (if any)
+   - Removed outliers using statistical methods like IQR or Winsorization
+   - Applied encoding for categorical variables
+
+4. **Model Building**
+   - Tested multiple regression models:
+     - Logistic Regression
+     - Decision Tree Regressor
+     - Random Forest Regressor
+     - KNN
+     - XGBoost Regressor
+
+5. **Model Evaluation**
+   - Evaluated models using:
+     - Accuracy
+     - Precision
+     - F1 score
+     - Recall score
+     - Roc-Auc
+   - Selected the best-performing model based on metrics
+
+6. **Predictions**
+   - Made final predictions on test data
+   - Visualized predicted vs actual values
+
+---
+
+## 🔧 Technologies Used
 
 - Python
-- Pandas, NumPy
+- NumPy, Pandas
 - Matplotlib, Seaborn
 - Scikit-learn
-- XGBoost
+- Jupyter Notebook
+
+---
 
 ## 📈 Results
 
-- Best performing model: ✅ _[Random Forest and XGBoost]_
-- Achieved R² Score: _[0.74 and 0,75]_
+- ✅ Best Performing Model: **[Random Forest and XGBoost]**
+- 📊 Achieved R² Score: **[0.74 and 0,75]**
+- Improved performance with feature selection and ensemble methods
 
-## 🚀 How to Run
+---
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/Sales_client_proj.git
-   cd Sales_client_proj
